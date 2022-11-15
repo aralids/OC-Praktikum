@@ -1,1 +1,374 @@
-Hello World
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Dilara Sarach: Workflow</title>
+        <link rel="stylesheet" href="oc-praktikum.css"/>
+        
+    </head>
+    <body>
+        <header></header>
+        <main>
+            <img src="flower.png" alt="Icon" id="icon">
+            <section id="diagram">
+                <img src="OC-Praktikum.svg" alt="OC-Praktikum diagram" usemap="#workflow-map">
+                <map name="workflow-map">
+                    <area id="a-cc" shape="rect" coords="236,191,323,218" href="#div-carbonylchemie" alt="Carbonylchemie" onclick="moveFlower('div-carbonylchemie')">
+                    <area shape="rect" coords="12,191,99,218" href="#div-carbonyl2" alt="Carbonyl2" onclick="moveFlower('div-carbonyl2')">
+                    <area shape="rect" coords="80,73,167,100" href="#div-carbonyl5" alt="Carbonyl5" onclick="moveFlower('div-carbonyl5')">
+                    <area shape="rect" coords="236,14,323,41" href="#div-carbonyl11" alt="Carbonyl11" onclick="moveFlower('div-carbonyl11')">
+                    <area shape="rect" coords="450,191,537,218" href="#div-oxred" alt="Ox & Red" onclick="moveFlower('div-oxred')">
+                    <area shape="rect" coords="594,73,681,100" href="#div-ox2" alt="Ox2" onclick="moveFlower('div-ox2')">
+                    <area shape="rect" coords="518,302,605,329" href="#div-substitutionen" alt="Substitutionen" onclick="moveFlower('div-substitutionen')">
+                    <area shape="rect" coords="667,302,754,329" href="#div-subst2" alt="Subst2" onclick="moveFlower('div-subst2')">
+                    <area shape="rect" coords="324,411,446,438" href="#div-da" alt="Diels-Alder-Reaktionen" onclick="moveFlower('div-da')">
+                    <area shape="rect" coords="342,517,428,544" href="#div-da2" alt="DA2" onclick="moveFlower('div-da2')">
+                    <area shape="rect" coords="164,301,251,328" href="#div-aromatenchemie" alt="Aromatenchemie" onclick="moveFlower('div-aromatenchemie')">
+                    <area shape="rect" coords="12,302,99,329" href="#div-aromat2" alt="Aromat2" onclick="moveFlower('div-aromat2')">
+                </map>
+            </section>
+            <section id="detail">
+                <div id="div-empty"></div>
+                <div id="div-carbonylchemie" class="category">
+                    <section id="subdiv-carbonylchemie-chapter" class="subsection">
+                        <nav id="navbar-carbonylchemie-chapter">
+                            <a href="#subdiv-carbonylchemie-chapter"><button class="carbonyl">Chapter in script</button></a>
+                            <a href="#subdiv-carbonylchemie-notes"><button class="carbonyl">Fiona's notes</button></a>
+                            <a href="#subdiv-carbonylchemie-summary"><button class="carbonyl">Summary</button></a>
+                        </nav>
+                        <iframe src="Carbonylchemie.pdf" title="Carbonylchemie Chapter"></iframe>
+                    </section>
+                    <section id="subdiv-carbonylchemie-notes" class="subsection">
+                        <nav id="navbar-carbonylchemie-notes">
+                            <a href="#subdiv-carbonylchemie-chapter"><button class="carbonyl">Chapter in script</button></a>
+                            <a href="#subdiv-carbonylchemie-notes"><button class="carbonyl">Fiona's notes</button></a>
+                            <a href="#subdiv-carbonylchemie-summary"><button class="carbonyl">Summary</button></a>
+                        </nav>
+                        <iframe src="carbonylchemie-notes.pdf" title="Fiona's notes on Carbonylchemie"></iframe>
+                    </section>
+                    <section id="subdiv-carbonylchemie-summary" class="subsection">
+                        <nav id="navbar-carbonylchemie-summary">
+                            <a href="#subdiv-carbonylchemie-chapter"><button class="carbonyl">Chapter in script</button></a>
+                            <a href="#subdiv-carbonylchemie-notes"><button class="carbonyl">Fiona's notes</button></a>
+                            <a href="#subdiv-carbonylchemie-summary"><button class="carbonyl">Summary</button></a>
+                        </nav>
+                        <iframe src="summary.txt" title="Carbonylchemie Summary"></iframe>
+                    </section>
+                </div>
+                <div id="div-carbonyl2" class="experiment">
+                    <section id="subdiv-carbonyl2-protocol" class="subsection">
+                        <nav id="navbar-carbonyl2-protocol">
+                            <a href="#subdiv-carbonyl2-protocol"><button class="carbonyl">Protocol</button></a>
+                            <a href="#subdiv-carbonyl2-summary"><button class="carbonyl">Summary</button></a>
+                        </nav>
+                        <iframe src="Carbonylchemie.pdf" title="Carbonylchemie Chapter"></iframe>
+                    </section>
+                    <section id="subdiv-carbonyl2-summary" class="subsection">
+                        <nav id="navbar-carbonyl2-summary">
+                            <a href="#subdiv-carbonyl2-protocol"><button class="carbonyl">Protocol</button></a>
+                            <a href="#subdiv-carbonyl2-summary"><button class="carbonyl">Summary</button></a>
+                        </nav>
+                        <iframe src="summary.txt" title="Carbonylchemie Summary"></iframe>
+                    </section>
+                </div>
+                <div id="div-carbonyl5" class="experiment">
+                    <section id="subdiv-carbonyl5-protocol" class="subsection">
+                        <nav id="navbar-carbonyl5-protocol">
+                            <a href="#subdiv-carbonyl5-protocol"><button class="carbonyl">Protocol</button></a>
+                            <a href="#subdiv-carbonyl5-summary"><button class="carbonyl">Summary</button></a>
+                        </nav>
+                        <iframe src="Carbonylchemie.pdf" title="Carbonylchemie Chapter"></iframe>
+                    </section>
+                    <section id="subdiv-carbonyl5-summary" class="subsection">
+                        <nav id="navbar-carbonyl5-summary">
+                            <a href="#subdiv-carbonyl5-protocol"><button class="carbonyl">Protocol</button></a>
+                            <a href="#subdiv-carbonyl5-summary"><button class="carbonyl">Summary</button></a>
+                        </nav>
+                        <iframe src="summary.txt" title="Carbonylchemie Summary"></iframe>
+                    </section>
+                </div>
+                <div id="div-carbonyl11" class="experiment">
+                    <section id="subdiv-carbonyl11-protocol" class="subsection">
+                        <nav id="navbar-carbonyl11-protocol">
+                            <a href="#subdiv-carbonyl11-protocol"><button class="carbonyl">Protocol</button></a>
+                            <a href="#subdiv-carbonyl11-summary"><button class="carbonyl">Summary</button></a>
+                        </nav>
+                        <iframe src="Gruppe13_-_Carbonyl11.pdf" title="Carbonylchemie Chapter"></iframe>
+                    </section>
+                    <section id="subdiv-carbonyl11-summary" class="subsection">
+                        <nav id="navbar-carbonyl11-summary">
+                            <a href="#subdiv-carbonyl11-protocol"><button class="carbonyl">Protocol</button></a>
+                            <a href="#subdiv-carbonyl11-summary"><button class="carbonyl">Summary</button></a>
+                        </nav>
+                        <iframe src="summary.txt" title="Carbonylchemie Summary"></iframe>
+                    </section>
+                </div>
+                <div id="div-oxred" class="category">
+                    <section id="subdiv-oxred-chapter" class="subsection">
+                        <nav id="navbar-oxred-chapter">
+                            <a href="#subdiv-oxred-chapter"><button class="oxred">Chapter in script</button></a>
+                            <a href="#subdiv-oxred-notes"><button class="oxred">Fiona's notes</button></a>
+                            <a href="#subdiv-oxred-summary"><button class="oxred">Summary</button></a>
+                        </nav>
+                        <iframe src="oxred.pdf" title="Carbonylchemie Chapter"></iframe>
+                    </section>
+                    <section id="subdiv-oxred-notes" class="subsection">
+                        <nav id="navbar-oxred-notes">
+                            <a href="#subdiv-oxred-chapter"><button class="oxred">Chapter in script</button></a>
+                            <a href="#subdiv-oxred-notes"><button class="oxred">Fiona's notes</button></a>
+                            <a href="#subdiv-oxred-summary"><button class="oxred">Summary</button></a>
+                        </nav>
+                        <iframe src="oxred-notes.pdf" title="Fiona's notes on OxRed"></iframe>
+                    </section>
+                    <section id="subdiv-oxred-summary" class="subsection">
+                        <nav id="navbar-oxred-summary">
+                            <a href="#subdiv-oxred-chapter"><button class="oxred">Chapter in script</button></a>
+                            <a href="#subdiv-oxred-notes"><button class="oxred">Fiona's notes</button></a>
+                            <a href="#subdiv-oxred-summary"><button class="oxred">Summary</button></a>
+                        </nav>
+                        <iframe src="summary.txt" title="Carbonylchemie Summary"></iframe>
+                    </section>
+                </div>
+                <div id="div-ox2" class="experiment">
+                    <section id="subdiv-ox2-protocol" class="subsection">
+                        <nav id="navbar-ox2-protocol">
+                            <a href="#subdiv-ox2-protocol"><button class="oxred">Protocol</button></a>
+                            <a href="#subdiv-ox2-summary"><button class="oxred">Summary</button></a>
+                        </nav>
+                        <iframe src="Carbonylchemie.pdf" title="Carbonylchemie Chapter"></iframe>
+                    </section>
+                    <section id="subdiv-ox2-summary" class="subsection">
+                        <nav id="navbar-ox2-summary">
+                            <a href="#subdiv-ox2-protocol"><button class="oxred">Protocol</button></a>
+                            <a href="#subdiv-ox2-summary"><button class="oxred">Summary</button></a>
+                        </nav>
+                        <iframe src="summary.txt" title="Ox2 Summary"></iframe>
+                    </section>
+                </div>
+                <div id="div-substitutionen" class="category">
+                    <section id="subdiv-substitutionen-chapter" class="subsection">
+                        <nav id="navbar-substitutionen-chapter">
+                            <a href="#subdiv-substitutionen-chapter"><button class="subst">Chapter in script</button></a>
+                            <a href="#subdiv-substitutionen-notes"><button class="subst">Fiona's notes</button></a>
+                            <a href="#subdiv-substitutionen-summary"><button class="subst">Summary</button></a>
+                        </nav>
+                        <iframe src="subst.pdf" title="Carbonylchemie Chapter"></iframe>
+                    </section>
+                    <section id="subdiv-substitutionen-notes" class="subsection">
+                        <nav id="navbar-substitutionen-notes">
+                            <a href="#subdiv-substitutionen-chapter"><button class="subst">Chapter in script</button></a>
+                            <a href="#subdiv-substitutionen-notes"><button class="subst">Fiona's notes</button></a>
+                            <a href="#subdiv-substitutionen-summary"><button class="subst">Summary</button></a>
+                        </nav>
+                        <iframe src="subst-notes.pdf" title="Fiona's notes on Subst"></iframe>
+                    </section>
+                    <section id="subdiv-substitutionen-summary" class="subsection">
+                        <nav id="navbar-substitutionen-summary">
+                            <a href="#subdiv-substitutionen-chapter"><button class="subst">Chapter in script</button></a>
+                            <a href="#subdiv-substitutionen-notes"><button class="subst">Fiona's notes</button></a>
+                            <a href="#subdiv-substitutionen-summary"><button class="subst">Summary</button></a>
+                        </nav>
+                        <iframe src="summary.txt" title="Carbonylchemie Summary"></iframe>
+                    </section>
+                </div>
+                <div id="div-subst2" class="experiment">
+                    <section id="subdiv-subst2-protocol" class="subsection">
+                        <nav id="navbar-subst2-protocol">
+                            <a href="#subdiv-subst2-protocol"><button class="subst">Protocol</button></a>
+                            <a href="#subdiv-subst2-summary"><button class="subst">Summary</button></a>
+                        </nav>
+                        <iframe src="Carbonylchemie.pdf" title="Carbonylchemie Chapter"></iframe>
+                    </section>
+                    <section id="subdiv-subst2-summary" class="subsection">
+                        <nav id="navbar-subst2-summary">
+                            <a href="#subdiv-subst2-protocol"><button class="subst">Protocol</button></a>
+                            <a href="#subdiv-subst2-summary"><button class="subst">Summary</button></a>
+                        </nav>
+                        <iframe src="summary.txt" title="Subst2 Summary"></iframe>
+                    </section>
+                </div>
+                <div id="div-da" class="category">
+                    <section id="subdiv-da-chapter" class="subsection">
+                        <nav id="navbar-da-chapter">
+                            <a href="#subdiv-da-chapter"><button class="da">Chapter in script</button></a>
+                            <a href="#subdiv-da-notes"><button class="da">Fiona's notes</button></a>
+                            <a href="#subdiv-da-summary"><button class="da">Summary</button></a>
+                        </nav>
+                        <iframe src="dielsalder.pdf" title="Carbonylchemie Chapter"></iframe>
+                    </section>
+                    <section id="subdiv-da-notes" class="subsection">
+                        <nav id="navbar-da-notes">
+                            <a href="#subdiv-da-chapter"><button class="da">Chapter in script</button></a>
+                            <a href="#subdiv-da-notes"><button class="da">Fiona's notes</button></a>
+                            <a href="#subdiv-da-summary"><button class="da">Summary</button></a>
+                        </nav>
+                        <iframe src="eliminierungen-notes.pdf" title="Fiona's notes on Subst"></iframe>
+                    </section>
+                    <section id="subdiv-da-summary" class="subsection">
+                        <nav id="navbar-da-summary">
+                            <a href="#subdiv-da-chapter"><button class="da">Chapter in script</button></a>
+                            <a href="#subdiv-da-notes"><button class="da">Fiona's notes</button></a>
+                            <a href="#subdiv-da-summary"><button class="da">Summary</button></a>
+                        </nav>
+                        <iframe src="summary.txt" title="Carbonylchemie Summary"></iframe>
+                    </section>
+                </div>
+                <div id="div-da2" class="experiment">
+                    <section id="subdiv-da2-protocol" class="subsection">
+                        <nav id="navbar-da2-protocol">
+                            <a href="#subdiv-da2-protocol"><button class="da">Protocol</button></a>
+                            <a href="#subdiv-da2-summary"><button class="da">Summary</button></a>
+                        </nav>
+                        <iframe src="Carbonylchemie.pdf" title="Carbonylchemie Chapter"></iframe>
+                    </section>
+                    <section id="subdiv-da2-summary" class="subsection">
+                        <nav id="navbar-da2-summary">
+                            <a href="#subdiv-da2-protocol"><button class="da">Protocol</button></a>
+                            <a href="#subdiv-da2-summary"><button class="da">Summary</button></a>
+                        </nav>
+                        <iframe src="summary.txt" title="DA2 Summary"></iframe>
+                    </section>
+                </div>
+                <div id="div-aromatenchemie" class="category">
+                    <section id="subdiv-aromaten-chapter" class="subsection">
+                        <nav id="navbar-aromaten-chapter">
+                            <a href="#subdiv-aromaten-chapter"><button class="aromat">Chapter in script</button></a>
+                            <a href="#subdiv-aromaten-notes"><button class="aromat">Fiona's notes</button></a>
+                            <a href="#subdiv-aromaten-summary"><button class="aromat">Summary</button></a>
+                        </nav>
+                        <iframe src="aromaten.pdf" title="Carbonylchemie Chapter"></iframe>
+                    </section>
+                    <section id="subdiv-aromaten-notes" class="subsection">
+                        <nav id="navbar-aromaten-notes">
+                            <a href="#subdiv-aromaten-chapter"><button class="aromat">Chapter in script</button></a>
+                            <a href="#subdiv-aromaten-notes"><button class="aromat">Fiona's notes</button></a>
+                            <a href="#subdiv-aromaten-summary"><button class="aromat">Summary</button></a>
+                        </nav>
+                        <iframe src="aromaten-notes.pdf" title="Fiona's notes on Aromaten"></iframe>
+                    </section>
+                    <section id="subdiv-aromaten-summary" class="subsection">
+                        <nav id="navbar-aromaten-summary">
+                            <a href="#subdiv-aromaten-chapter"><button class="aromat">Chapter in script</button></a>
+                            <a href="#subdiv-aromaten-notes"><button class="aromat">Fiona's notes</button></a>
+                            <a href="#subdiv-aromaten-summary"><button class="aromat">Summary</button></a>
+                        </nav>
+                        <iframe src="summary.txt" title="Carbonylchemie Summary"></iframe>
+                    </section>
+                </div>
+                <div id="div-aromat2" class="experiment">
+                    <section id="subdiv-aromat2-protocol" class="subsection">
+                        <nav id="navbar-aromat2-protocol">
+                            <a href="#subdiv-aromat2-protocol"><button class="aromat">Protocol</button></a>
+                            <a href="#subdiv-aromat2-summary"><button class="aromat">Summary</button></a>
+                        </nav>
+                        <iframe src="Carbonylchemie.pdf" title="Carbonylchemie Chapter"></iframe>
+                    </section>
+                    <section id="subdiv-aromat2-summary" class="subsection">
+                        <nav id="navbar-aromat2-summary">
+                            <a href="#subdiv-aromat2-protocol"><button class="aromat">Protocol</button></a>
+                            <a href="#subdiv-aromat2-summary"><button class="aromat">Summary</button></a>
+                        </nav>
+                        <iframe src="summary.txt" title="Carbonylchemie Summary"></iframe>
+                    </section>
+                </div>
+            </section>
+        </main>
+        <script>
+            function moveFlower(id) {
+                let divHeight = document.getElementById('diagram').clientHeight;
+                let divWidth = document.getElementById('diagram').clientWidth;
+                let imgHeight = divWidth * (651/900);
+                let imgWidth = divWidth;
+                let emptySpaceTop = (divHeight - imgHeight) / 2;
+                if (id === 'div-carbonylchemie')  {
+                    document.getElementById('icon').style.left = `calc(${imgWidth}px * (235 / 900))`;
+                    document.getElementById('icon').style.top = `calc(${emptySpaceTop}px + (${imgHeight}px * (191 / 651)))`;
+                }
+                else if (id === 'div-carbonyl2') {
+                    document.getElementById('icon').style.left = `calc(${imgWidth}px * (-10 / 900))`;
+                    document.getElementById('icon').style.top = `calc(${emptySpaceTop}px + (${imgHeight}px * (191 / 651)))`;
+                }
+                else if (id === 'div-carbonyl5') {
+                    document.getElementById('icon').style.left = `calc(${imgWidth}px * (60 / 900))`;
+                    document.getElementById('icon').style.top = `calc(${emptySpaceTop}px + (${imgHeight}px * (55 / 651)))`;
+                }
+                else if (id === 'div-carbonyl11')  {
+                    document.getElementById('icon').style.left = `calc(${imgWidth}px * (235 / 900))`;
+                    document.getElementById('icon').style.top = `calc(${emptySpaceTop}px + (${imgHeight}px * (-10 / 651)))`;
+                }
+                else if (id === 'div-oxred') {
+                    document.getElementById('icon').style.left = `calc(${imgWidth}px * (500 / 900))`;
+                    document.getElementById('icon').style.top = `calc(${emptySpaceTop}px + (${imgHeight}px * (191 / 651)))`;
+                }
+                else if (id === 'div-ox2') {
+                    document.getElementById('icon').style.left = `calc(${imgWidth}px * (660 / 900))`;
+                    document.getElementById('icon').style.top = `calc(${emptySpaceTop}px + (${imgHeight}px * (55 / 651)))`;
+                }
+                else if (id === 'div-carbonyl2') {
+                    document.getElementById('icon').style.left = `calc(${imgWidth}px * (-10 / 900))`;
+                    document.getElementById('icon').style.top = `calc(${emptySpaceTop}px + (${imgHeight}px * (191 / 651)))`;
+                }
+                else if (id === 'div-carbonyl5') {
+                    document.getElementById('icon').style.left = `calc(${imgWidth}px * (60 / 900))`;
+                    document.getElementById('icon').style.top = `calc(${emptySpaceTop}px + (${imgHeight}px * (55 / 651)))`;
+                }
+                else if (id === 'div-substitutionen')  {
+                    document.getElementById('icon').style.left = `calc(${imgWidth}px * (570 / 900))`;
+                    document.getElementById('icon').style.top = `calc(${emptySpaceTop}px + (${imgHeight}px * (325 / 651)))`;
+                }
+                else if (id === 'div-subst2') {
+                    document.getElementById('icon').style.left = `calc(${imgWidth}px * (750 / 900))`;
+                    document.getElementById('icon').style.top = `calc(${emptySpaceTop}px + (${imgHeight}px * (325 / 651)))`;
+                }
+                else if (id === 'div-da') {
+                    document.getElementById('icon').style.left = `calc(${imgWidth}px * (350 / 900))`;
+                    document.getElementById('icon').style.top = `calc(${emptySpaceTop}px + (${imgHeight}px * (450 / 651)))`;
+                }
+                else if (id === 'div-da2')  {
+                    document.getElementById('icon').style.left = `calc(${imgWidth}px * (370 / 900))`;
+                    document.getElementById('icon').style.top = `calc(${emptySpaceTop}px + (${imgHeight}px * (575 / 651)))`;
+                }
+                else if (id === 'div-aromatenchemie') {
+                    document.getElementById('icon').style.left = `calc(${imgWidth}px * (155 / 900))`;
+                    document.getElementById('icon').style.top = `calc(${emptySpaceTop}px + (${imgHeight}px * (325 / 651)))`;
+                }
+                else if (id === 'div-aromat2') {
+                    document.getElementById('icon').style.left = `calc(${imgWidth}px * (-10 / 900))`;
+                    document.getElementById('icon').style.top = `calc(${emptySpaceTop}px + (${imgHeight}px * (325 / 651)))`;
+                }
+            }
+
+            function determineSection() {
+                let url = document.URL;
+                let section = url.slice(url.search("div"));
+                return section;
+            }
+            
+            window.onload = moveFlower(determineSection());
+            
+            
+        </script>
+        <script>
+            let x = document.getElementById('a-cc').getAttribute('coords').split(',')[0];
+            let y = document.getElementById('a-cc').getAttribute('coords').split(',')[1];
+            let width = document.getElementById('a-cc').getAttribute('coords').split(',')[2] - x;
+            let height = document.getElementById('a-cc').getAttribute('coords').split(',')[3] - y;
+            console.log(x, y, width, height, document.getElementById('diagram').offsetHeight);
+            let xConst = x / 768;
+            let yConst = y / 746;
+            let widthConst = width / 87;
+            let heightConst = height / 27;
+            let divHeight = document.getElementById('diagram').offsetHeight;
+            let divWidth = document.getElementById('diagram').offsetWidth;
+            let imgHeight = divWidth * (651/900);
+            let imgWidth = divWidth;
+            let newX = imgWidth * xConst;
+            let newY = imgHeight * yConst;
+            let newXend = newX + imgWidth * widthConst;
+            let newYend = newY + imgHeight * heightConst;
+            document.getElementById('a-cc').setAttribute('coords', `${newX},${newY},${newXend},${newYend}`);
+        </script>
+        <footer></footer>
+    </body>
+</html>
